@@ -1,0 +1,34 @@
+/*-------------------------------------
+  Resume
+-------------------------------------*/
+
+.resume-header {
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.resume-icon {
+  font-size: $big;
+  i{
+    margin-left: -10px;
+  }
+}
+
+.resume-title {
+  margin-top: 40px;
+}
+
+.resume-box {
+  @include muli-font;
+  margin-bottom: 100px;
+  margin-top: 0;
+  text-align: left;
+  font-size: $small;
+
+  h2 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 0;
+  }
+}

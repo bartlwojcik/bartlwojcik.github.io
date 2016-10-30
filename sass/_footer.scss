@@ -1,0 +1,27 @@
+/*-------------------------------------
+  Footer
+-------------------------------------*/
+
+.footer-section {
+  background-color: $black;
+  color: white;
+  height: 300px;
+  padding: 100px 0;
+  font-size: $small;
+  font-weight: 400;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  i {
+    padding: 10px 5px;
+    font-size: 20px;
+  }
+}
+
+.icons-licence {
+  font-size: $small;
+  letter-spacing: 2px;
+}

@@ -1,0 +1,23 @@
+/*-------------------------------------
+  About
+-------------------------------------*/
+
+.about-section {
+  .section-title {
+    margin-bottom: 4vh;
+  }
+  img {
+    height: 250px;
+    margin-top: 20px;
+  }
+  .about-me {
+    //position: relative;
+    padding: 15px 10px;
+    vertical-align: center;
+    text-align: left;
+    @include muli-font;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 2px;
+  }
+}

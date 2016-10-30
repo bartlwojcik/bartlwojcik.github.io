@@ -1,0 +1,85 @@
+/*-------------------------------------
+  Global style
+-------------------------------------*/
+
+body {
+  @include main-font;
+  @include reset;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header-section,
+.skills-section,
+.resume-section,
+.about-section,
+.contact-section {
+  min-height: calc(100vh - 50px);
+  height: auto;
+  padding: 0;
+}
+
+.hide-me {
+  opacity: 0;
+}
+
+.section-title {
+  padding: 31px 0;
+  background-color: white;
+  font-size: $big;
+  line-height: $big;
+  h2 {
+    margin-top: 25vh;
+    margin-bottom: 7vh;
+  }
+}
+
+/*-------------------------------------
+  Buttons
+-------------------------------------*/
+
+.press-me {
+  @include main-font;
+  @include button-reset;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 6px;
+  padding: 15px 30px;
+  background-color: $mild-red;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:focus {
+    @include button-reset;
+    background-color: $dark;
+    color: white;
+  }
+}
+
+/*-------------------------------------
+  Loading screen
+-------------------------------------*/
+
+.no-js #loader {
+  display: none;
+}
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../img/Preloader_10.gif) center no-repeat #fff;
+}

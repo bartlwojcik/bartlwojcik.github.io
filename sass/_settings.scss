@@ -1,0 +1,45 @@
+/*-------------------------------------
+  VARIABLES
+-------------------------------------*/
+
+//fonts
+$raleway:      'Raleway', sans-serif;
+$muli:         'Muli', sans-serif;
+//font-size
+$small:        12px;
+$normal:       16px;
+$big:          30px;
+$biggest:      65px;
+//colors
+$dark-gray:    #303030;
+$mild-red:     #fc6453;
+$dark:         #2C3E50;
+$black:        #131313;
+$sea:          #9acec5;
+
+/*-------------------------------------
+  MIXINS
+-------------------------------------*/
+
+@mixin main-font {
+  font-family: $raleway;
+  font-size: $small;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: $black;
+}
+
+@mixin muli-font {
+  @include main-font;
+  font-family: $muli;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+@mixin button-reset {
+  border-color: transparent;
+}

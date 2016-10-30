@@ -1,0 +1,335 @@
+/*-------------------------------------
+  Global stylesheet
+-------------------------------------*/
+/*-------------------------------------
+  VARIABLES
+-------------------------------------*/
+/*-------------------------------------
+  MIXINS
+-------------------------------------*/
+/*-------------------------------------
+  Global style
+-------------------------------------*/
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #131313;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; }
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
+.header-section,
+.skills-section,
+.resume-section,
+.about-section,
+.contact-section {
+  min-height: calc(100vh - 50px);
+  height: auto;
+  padding: 0; }
+
+.hide-me {
+  opacity: 0; }
+
+.section-title {
+  padding: 31px 0;
+  background-color: white;
+  font-size: 30px;
+  line-height: 30px; }
+  .section-title h2 {
+    margin-top: 25vh;
+    margin-bottom: 7vh; }
+
+/*-------------------------------------
+  Buttons
+-------------------------------------*/
+.press-me {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #131313;
+  border-color: transparent;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 6px;
+  padding: 15px 30px;
+  background-color: #fc6453; }
+  .press-me:hover, .press-me:active, .press-me:focus, .press-me:active:focus {
+    border-color: transparent;
+    background-color: #2C3E50;
+    color: white; }
+
+/*-------------------------------------
+  Loading screen
+-------------------------------------*/
+.no-js #loader {
+  display: none; }
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0; }
+
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../img/Preloader_10.gif) center no-repeat #fff; }
+
+/*-------------------------------------
+  Navigation bar
+-------------------------------------*/
+nav {
+  position: fixed;
+  z-index: 1;
+  width: 100vw; }
+
+.navbar-default {
+  background-color: white; }
+
+.navbar-default .navbar-nav > li > a {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  -webkit-transition: all 0.6s ease, border 0.1s ease;
+  transition: all 0.6s ease, border 0.1s ease; }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: white;
+  border-bottom: 6px solid #9acec5;
+  outline: 0; }
+
+.nav-links {
+  float: right;
+  margin-right: 20px; }
+
+.nav-links li {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #131313;
+  margin: 0 15px; }
+
+.navbar-toggle {
+  margin-right: 50px;
+  border-radius: 0; }
+  .navbar-toggle i {
+    font-size: 24px;
+    color: #d8d8d8;
+    padding: 0; }
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: #9acec5;
+  border-color: white; }
+  .navbar-default .navbar-toggle:focus i,
+  .navbar-default .navbar-toggle:hover i {
+    color: white; }
+
+/*-------------------------------------
+  Header
+-------------------------------------*/
+header {
+  background-image: url("../img/header-background-color.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw; }
+
+.greeting h1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 14px;
+  color: #303030;
+  margin-top: 40vh;
+  margin-bottom: 20px; }
+.greeting h2 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  color: #303030;
+  margin-bottom: 30px; }
+
+/*-------------------------------------
+  Skills
+-------------------------------------*/
+.box {
+  margin: 0px 0px;
+  background-color: #9acec5;
+  color: white;
+  padding: 4%; }
+  .box h2 {
+    margin-top: 60px; }
+  .box i {
+    font-size: 65px; }
+  .box p {
+    font-size: 16px; }
+
+/*-------------------------------------
+  Resume
+-------------------------------------*/
+.resume-header {
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 50px; }
+
+.resume-icon {
+  font-size: 30px; }
+  .resume-icon i {
+    margin-left: -10px; }
+
+.resume-title {
+  margin-top: 40px; }
+
+.resume-box {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #131313;
+  font-family: "Muli", sans-serif;
+  margin-bottom: 100px;
+  margin-top: 0;
+  text-align: left;
+  font-size: 12px; }
+  .resume-box h2 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 0; }
+
+/*-------------------------------------
+  About
+-------------------------------------*/
+.about-section .section-title {
+  margin-bottom: 4vh; }
+.about-section img {
+  height: 250px;
+  margin-top: 20px; }
+.about-section .about-me {
+  padding: 15px 10px;
+  vertical-align: center;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #131313;
+  font-family: "Muli", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 2px; }
+
+/*-------------------------------------
+  Contact
+-------------------------------------*/
+.contact-section {
+  margin-bottom: 20vh; }
+  .contact-section .section-title {
+    margin-bottom: 7vh; }
+  .contact-section .contact-left,
+  .contact-section .contact-right {
+    margin-bottom: 50px; }
+
+/*-------------------------------------
+  Form
+-------------------------------------*/
+textarea.form-control {
+  height: 120px; }
+
+.form-control {
+  border-radius: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #131313; }
+  .form-control:focus {
+    border-color: #2C3E50;
+    color: #131313;
+    box-shadow: 0px 0px 0px 0px transparent; }
+
+.thanks {
+  display: none;
+  left: 0px;
+  top: 0px;
+  color: black;
+  height: 40vh;
+  width: 100%;
+  z-index: 10;
+  opacity: 0;
+  padding-top: 15vh; }
+  .thanks p {
+    text-align: center;
+    font-size: 16px; }
+
+/*-------------------------------------
+  Contact details
+-------------------------------------*/
+.contact-note {
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 2px;
+  min-height: 350px;
+  width: 600px; }
+  .contact-note h2 {
+    font-size: 22px;
+    padding-bottom: 5px;
+    margin-top: 0; }
+  .contact-note p {
+    padding: 5px 0; }
+  .contact-note .adress-icon, .contact-note .mail-icon {
+    font-size: 30px;
+    float: left;
+    margin-top: 30px; }
+  .contact-note .mail-icon {
+    margin-top: 23px;
+    margin-left: 5px;
+    margin-right: -5px; }
+  .contact-note .adress,
+  .contact-note .mail {
+    float: left;
+    margin-top: 30px;
+    margin-left: 20px; }
+    .contact-note .adress h3,
+    .contact-note .mail h3 {
+      font-size: 22px;
+      margin-top: 0; }
+
+/*-------------------------------------
+  Footer
+-------------------------------------*/
+.footer-section {
+  background-color: #131313;
+  color: white;
+  height: 300px;
+  padding: 100px 0;
+  font-size: 12px;
+  font-weight: 400; }
+  .footer-section a {
+    text-decoration: none;
+    color: white; }
+  .footer-section i {
+    padding: 10px 5px;
+    font-size: 20px; }
+
+.icons-licence {
+  font-size: 12px;
+  letter-spacing: 2px; }
+
+/*# sourceMappingURL=styles.css.map */
