@@ -61,28 +61,23 @@ $(function () {
       });
     }
 
-    var fadeOffset;
     var wWidth = $(window).width();
     console.log(wWidth);
     if (wWidth > 768) {
-      fadeOffset = 500;
-      console.log(fadeOffset);
+      //fading in sections
+      $('.hide-me').each(function() {
+        var bottomOfObject = $(this).offset().top + $(this).outerHeight();
+        var bottomOfWindow = $(window).scrollTop() + $(window).height();
+
+        if (bottomOfWindow > (bottomOfObject - 500)) {
+          $(this).animate({
+            'opacity':'1',
+          },500);
+        }
+      });
     } else {
-      fadeOffset = 1000;
-      console.log(fadeOffset);
+      $('.hide-me').css('opacity','1');
     }
-
-    //fading in sections
-    $('.hide-me').each(function() {
-      var bottomOfObject = $(this).offset().top + $(this).outerHeight();
-      var bottomOfWindow = $(window).scrollTop() + $(window).height();
-
-      if (bottomOfWindow > (bottomOfObject - fadeOffset)) {
-        $(this).animate({
-          'opacity':'1',
-        },500);
-      }
-    });
   });
 
   //contact form
