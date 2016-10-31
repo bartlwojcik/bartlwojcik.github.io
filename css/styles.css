@@ -153,12 +153,15 @@ header {
   width: 100vw; }
 
 .greeting h1 {
-  font-size: 65px;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 14px;
   color: #303030;
   margin-top: 40vh;
   margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    .greeting h1 {
+      font-size: 65px; } }
 .greeting h2 {
   font-size: 16px;
   font-weight: 700;
@@ -283,7 +286,7 @@ textarea.form-control {
 -------------------------------------*/
 .contact-note {
   text-align: left;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 2px;
   min-height: 350px;
   width: 600px; }
