@@ -46,8 +46,9 @@ $(function () {
   scrollTo('#link5','#contact');
   scrollTo('#btn-contact','#contact');
 
-  //navbar height animation
-  $(window).on('scroll',function() {
+  $(window).on('scroll', function() {
+
+    //navbar height animation
     if ($(document).scrollTop() > 20) {
       $('.navbar-default .navbar-nav>li>a').css({
         'padding-top':'15px',
@@ -60,12 +61,23 @@ $(function () {
       });
     }
 
+    var fadeOffset;
+    var wWidth = $(window).width();
+    console.log(wWidth);
+    if (wWidth > 768) {
+      fadeOffset = 500;
+      console.log(fadeOffset);
+    } else {
+      fadeOffset = 1000;
+      console.log(fadeOffset);
+    }
+
     //fading in sections
     $('.hide-me').each(function() {
       var bottomOfObject = $(this).offset().top + $(this).outerHeight();
       var bottomOfWindow = $(window).scrollTop() + $(window).height();
 
-      if (bottomOfWindow > (bottomOfObject - 500)) {
+      if (bottomOfWindow > (bottomOfObject - fadeOffset)) {
         $(this).animate({
           'opacity':'1',
         },500);
