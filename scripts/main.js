@@ -29,7 +29,7 @@ $(function () {
       $(this).animate({backgroundColor: '#9acec5'}, 200);
 		}
 	);
-  $('i.fa').hover(
+  $('i.fa, a.cv').hover(
 		function() {
       $(this).animate({color: '#9acec5'}, 200);
 		},
