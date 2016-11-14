@@ -176,13 +176,18 @@ header {
   margin: 0px 0px;
   background-color: #9acec5;
   color: white;
-  padding: 4%; }
+  padding: 4%;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease; }
   .box h2 {
     margin-top: 60px; }
   .box i {
     font-size: 65px; }
   .box p {
     font-size: 16px; }
+  .box:hover {
+    cursor: crosshair;
+    background-color: #fc6453; }
 
 /*-------------------------------------
   Resume
@@ -326,7 +331,11 @@ textarea.form-control {
   font-weight: 400; }
   .footer-section a {
     text-decoration: none;
-    color: white; }
+    color: white;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease; }
+    .footer-section a:hover {
+      color: #9acec5; }
   .footer-section i {
     padding: 10px 5px;
     font-size: 20px; }

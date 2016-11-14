@@ -7,7 +7,8 @@
   background-color: $sea;
   color: white;
   padding: 4%;
-  
+  transition: all 0.5s ease;
+
   h2 {
     margin-top: 60px;
   }
@@ -18,5 +19,11 @@
 
   p {
     font-size: $normal;
+  }
+
+  &:hover {
+    cursor: crosshair;
+    background-color: $mild-red;
+
   }
 }
