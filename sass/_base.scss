@@ -50,6 +50,7 @@ body {
   letter-spacing: 6px;
   padding: 15px 30px;
   background-color: $mild-red;
+  transition: all 0.5s ease;
 
   &:hover,
   &:active,

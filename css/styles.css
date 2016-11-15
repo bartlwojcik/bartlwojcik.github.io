@@ -60,7 +60,8 @@ body {
   font-weight: 300;
   letter-spacing: 6px;
   padding: 15px 30px;
-  background-color: #fc6453; }
+  background-color: #fc6453;
+  transition: all 0.5s ease; }
   .press-me:hover, .press-me:active, .press-me:focus, .press-me:active:focus {
     border-color: transparent;
     background-color: #2C3E50;
@@ -162,6 +163,7 @@ header {
   @media (min-width: 768px) {
     .greeting h1 {
       font-size: 65px; } }
+
 .greeting h2 {
   font-size: 16px;
   font-weight: 700;
@@ -177,8 +179,7 @@ header {
   background-color: #9acec5;
   color: white;
   padding: 4%;
-  -webkit-transition: all 0.5s ease;
-          transition: all 0.5s ease; }
+  transition: all 0.5s ease; }
   .box h2 {
     margin-top: 60px; }
   .box i {
@@ -226,9 +227,11 @@ header {
 -------------------------------------*/
 .about-section .section-title {
   margin-bottom: 4vh; }
+
 .about-section img {
   height: 250px;
   margin-top: 20px; }
+
 .about-section .about-me {
   padding: 15px 10px;
   vertical-align: center;
@@ -270,6 +273,8 @@ textarea.form-control {
   .form-control:focus {
     border-color: #2C3E50;
     color: #131313;
+    -webkit-box-shadow: 0px 0px 0px 0px transparent;
+    -moz-box-shadow: 0px 0px 0px 0px transparent;
     box-shadow: 0px 0px 0px 0px transparent; }
 
 .thanks {
@@ -332,8 +337,7 @@ textarea.form-control {
   .footer-section a {
     text-decoration: none;
     color: white;
-    -webkit-transition: all 0.5s ease;
-            transition: all 0.5s ease; }
+    transition: all 0.5s ease; }
     .footer-section a:hover {
       color: #9acec5; }
   .footer-section i {
@@ -347,5 +351,3 @@ textarea.form-control {
 .icons-licence {
   font-size: 12px;
   letter-spacing: 2px; }
-
-/*# sourceMappingURL=styles.css.map */
