@@ -1,6 +1,5 @@
-'use strict';
-
 (function() {
+  'use strict';
   /*
    * Form module
   */
@@ -24,6 +23,9 @@
         success: callback,
       });
     },
+    validateForm: function() {
+
+    },
     showThankYou: function () {
       this.config.$contactForm.animate({
         'opacity':'0'
@@ -42,7 +44,7 @@
         _replyto: $('#form-mail').val(),
         _subject: $('#form-subject').val(),
         body: $('#form-message').val(),
-      }
+      };
     },
     initialize: function () {
       this.bindSubmitForm();
@@ -50,4 +52,4 @@
   };
 
   module.exports = contactForm;
-})()
+})();

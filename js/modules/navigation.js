@@ -1,4 +1,5 @@
 (function() {
+  'use strict';
   /*
     Navigation
   */
@@ -16,7 +17,7 @@
         this.config.$body.animate({
           scrollTop: $(destination).offset().top + 50 + (this.config.$wHeight * 0.065)
         }, 1000);
-        return false
+        return false;
       } else {
         this.config.$body.animate({
           scrollTop: $(destination).offset().top

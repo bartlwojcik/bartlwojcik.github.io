@@ -1,10 +1,8 @@
-'use strict';
-
 (function () {
+  'use strict';
   /*
   * fading in sections
   */
-
   var fade = {
     config: {
       $hideMe: $('.hide-me')
@@ -17,7 +15,7 @@
       if (this.$wWidth > 768) {
         this.config.$hideMe.each(this.fadeIn);
       } else {
-        this.config.showNow();
+        this.showNow();
       }
     },
     fadeIn: function () {

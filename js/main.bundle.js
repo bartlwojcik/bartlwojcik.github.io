@@ -12,9 +12,8 @@ navbarShrink.initialize();
 contactForm.initialize();
 
 },{"./modules/contactForm.js":2,"./modules/fading.js":3,"./modules/loadingScreen.js":4,"./modules/navbarShrink.js":5,"./modules/navigation.js":6}],2:[function(require,module,exports){
-'use strict';
-
 (function() {
+  'use strict';
   /*
    * Form module
   */
@@ -38,6 +37,9 @@ contactForm.initialize();
         success: callback,
       });
     },
+    validateForm: function() {
+
+    },
     showThankYou: function () {
       this.config.$contactForm.animate({
         'opacity':'0'
@@ -56,7 +58,7 @@ contactForm.initialize();
         _replyto: $('#form-mail').val(),
         _subject: $('#form-subject').val(),
         body: $('#form-message').val(),
-      }
+      };
     },
     initialize: function () {
       this.bindSubmitForm();
@@ -64,16 +66,14 @@ contactForm.initialize();
   };
 
   module.exports = contactForm;
-})()
+})();
 
 },{}],3:[function(require,module,exports){
-'use strict';
-
 (function () {
+  'use strict';
   /*
   * fading in sections
   */
-
   var fade = {
     config: {
       $hideMe: $('.hide-me')
@@ -86,7 +86,7 @@ contactForm.initialize();
       if (this.$wWidth > 768) {
         this.config.$hideMe.each(this.fadeIn);
       } else {
-        this.config.showNow();
+        this.showNow();
       }
     },
     fadeIn: function () {
@@ -113,6 +113,7 @@ contactForm.initialize();
 
 },{}],4:[function(require,module,exports){
 (function () {
+  'use strict';
   /*
   * loading screen
   */
@@ -130,6 +131,7 @@ contactForm.initialize();
 
 },{}],5:[function(require,module,exports){
 (function () {
+  'use strict';
   /*
   * Navbar shrink
   */
@@ -169,6 +171,7 @@ contactForm.initialize();
 
 },{}],6:[function(require,module,exports){
 (function() {
+  'use strict';
   /*
     Navigation
   */
@@ -186,7 +189,7 @@ contactForm.initialize();
         this.config.$body.animate({
           scrollTop: $(destination).offset().top + 50 + (this.config.$wHeight * 0.065)
         }, 1000);
-        return false
+        return false;
       } else {
         this.config.$body.animate({
           scrollTop: $(destination).offset().top
