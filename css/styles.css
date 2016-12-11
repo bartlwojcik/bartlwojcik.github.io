@@ -299,7 +299,7 @@ textarea.form-control {
   font-size: 12px;
   letter-spacing: 2px;
   min-height: 350px;
-  width: 600px; }
+  max-width: 600px; }
   .contact-note h2 {
     font-size: 22px;
     padding-bottom: 5px;

@@ -38,7 +38,6 @@ textarea.form-control {
   display: none;
   left: 0px;
   top: 0px;
-  //background-color: yellow;
   color: black;
   height: 40vh;
   width: 100%;
@@ -60,7 +59,7 @@ textarea.form-control {
   font-size: 12px;
   letter-spacing: 2px;
   min-height: 350px;
-  width: 600px;
+  max-width: 600px;
   h2 {
     font-size: 22px;
     padding-bottom: 5px;
