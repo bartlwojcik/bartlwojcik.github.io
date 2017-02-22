@@ -18,7 +18,9 @@
 -------------------------------------*/
 
 textarea.form-control {
+  width: 507px;
   height: 120px;
+  resize: none;
 }
 
 .form-control {
@@ -72,12 +74,13 @@ textarea.form-control {
     font-size: $big;
     float: left;
     margin-top: 30px;
+    margin-right: 10px;
   }
   .mail-icon {
     @extend .adress-icon;
     margin-top: 23px;
     margin-left: 5px;
-    margin-right: -5px;
+    margin-right: 5px;
   }
   .adress,
   .mail {
